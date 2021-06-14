@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://just-base-testing-default-rtdb.europe-west1.firebasedatabase.app</string>
+  <string name="gcm_defaultSenderId" translatable="false">529822509836</string>
+  <string name="google_storage_bucket" translatable="false">just-base-testing.appspot.com</string>
+  <string name="project_id" translatable="false">just-base-testing</string>
+  <string name="google_api_key" translatable="false">AIzaSyBV_27qZes_PoTWYUiGnWPNLPyWGTICGKQ</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBV_27qZes_PoTWYUiGnWPNLPyWGTICGKQ</string>
+  <string name="google_app_id" translatable="false">1:529822509836:android:93f7552d38438b489bf729</string>
+  <string name="default_web_client_id" translatable="false">529822509836-cng7662h6fecqo54hq002untpo1ir611.apps.googleusercontent.com</string>
+</resources>
