@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "529822509836",
-    "firebase_url": "https://just-base-testing-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "just-base-testing",
-    "storage_bucket": "just-base-testing.appspot.com"
+    "project_number": "361862759404",
+    "project_id": "just-base-testing-2",
+    "storage_bucket": "just-base-testing-2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:529822509836:android:93f7552d38438b489bf729",
+        "mobilesdk_app_id": "1:361862759404:android:2ce518f802e60b13f136c9",
         "android_client_info": {
-          "package_name": "just.base.testing"
+          "package_name": "just.base.testing.two"
         }
       },
       "oauth_client": [
         {
-          "client_id": "529822509836-cng7662h6fecqo54hq002untpo1ir611.apps.googleusercontent.com",
+          "client_id": "361862759404-f3q2ptefl1f8gqlggm6s5tv59h91bse4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBV_27qZes_PoTWYUiGnWPNLPyWGTICGKQ"
+          "current_key": "AIzaSyAMhPA957yRDIayGY4Rlkr3JYDscGPKEVw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "529822509836-cng7662h6fecqo54hq002untpo1ir611.apps.googleusercontent.com",
+              "client_id": "361862759404-f3q2ptefl1f8gqlggm6s5tv59h91bse4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

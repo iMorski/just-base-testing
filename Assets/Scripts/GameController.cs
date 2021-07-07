@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
 
         private void OnApplicationQuit()
         {
-            FB.Disconnect();
+            //FB.Disconnect();
         }
 
     #else
@@ -55,7 +55,7 @@ public class GameController : MonoBehaviour
         {
             if (OnPause && OnPauseSkip)
             {
-                FirebaseController.Disconnect();
+                //FirebaseController.Disconnect();
             }
             else
             {

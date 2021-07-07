@@ -37,7 +37,7 @@ public class FirebaseController : MonoBehaviour
     public delegate void OnRoomDataChange();
     public event OnRoomDataChange RoomDataChange;
 
-    private bool ConnectionSkip;
+    private bool ConnectionChangeSkip;
     
     private void Awake()
     {
@@ -52,11 +52,11 @@ public class FirebaseController : MonoBehaviour
         {
             if (Task.Result != DependencyStatus.Available) return;
             
-            FirebaseDatabase.DefaultInstance.GetReference(".info/connected").ValueChanged += CheckConnection;
+            FirebaseDatabase.DefaultInstance.GetReference(".info/connected").ValueChanged += CheckConnectionChange;
 
-            void CheckConnection(object Sender, ValueChangedEventArgs Argument)
+            void CheckConnectionChange(object Sender, ValueChangedEventArgs Argument)
             {
-                if (!ConnectionSkip) { ConnectionSkip = true; return; }
+                if (!ConnectionChangeSkip) { ConnectionChangeSkip = true; return; }
                 
                 bool Connection;
                 
@@ -101,6 +101,29 @@ public class FirebaseController : MonoBehaviour
                     
         return true;
     }
+
+    public void Connect()
+    {
+        Debug.Log("Step: 2.0 - Connecting");
+
+        ConnectionStep = 2.0;
+        ConnectionStepChange?.Invoke();
+        
+        BaseTracking = BaseReference;
+        BaseTracking.ValueChanged += OnBaseChange;
+    }
+    
+    private void OnBaseChange(object Sender, ValueChangedEventArgs Argument)
+    {
+        foreach (DataSnapshot Data in Argument.Snapshot.Children)
+        {
+            Debug.Log($"{Data.Key} - {Data.Value}");
+        }
+        
+        Debug.Log(Argument.Snapshot.Children.Count());
+    }
+
+    /*
 
     public void Connect()
     {
@@ -393,4 +416,6 @@ public class FirebaseController : MonoBehaviour
 
         ConnectionStep = 0;
     }
+    
+    */
 }
